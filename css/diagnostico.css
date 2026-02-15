@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(circle at 30% 40%, rgba(0, 255, 136, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 30% 40%, rgba(0, 191, 255, 0.08) 0%, transparent 50%),
         radial-gradient(circle at 70% 60%, rgba(255, 68, 68, 0.06) 0%, transparent 50%);
     z-index: 1;
 }
@@ -34,13 +34,13 @@
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-xs);
-    background: rgba(0, 255, 136, 0.15);
-    border: 1px solid var(--primary-green);
+    background: rgba(0, 191, 255, 0.15);
+    border: 1px solid var(--primary-cyan);
     padding: 0.5rem 1.25rem;
     border-radius: 100px;
     font-size: 0.875rem;
     font-weight: var(--font-weight-semibold);
-    color: var(--primary-green);
+    color: var(--primary-cyan);
     margin-bottom: var(--spacing-md);
     letter-spacing: 1px;
 }
@@ -78,7 +78,7 @@
 }
 
 .trust-item i {
-    color: var(--primary-green);
+    color: var(--primary-cyan);
     font-size: 1.125rem;
 }
 
@@ -102,7 +102,7 @@
 .progress-fill {
     height: 100%;
     width: 25%;
-    background: linear-gradient(90deg, var(--primary-green), var(--primary-green-dark));
+    background: linear-gradient(90deg, var(--primary-cyan), var(--primary-cyan-dark));
     border-radius: 100px;
     transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -144,15 +144,15 @@
 }
 
 .progress-step.active .step-dot {
-    background: var(--primary-green);
-    border-color: var(--primary-green);
+    background: var(--primary-cyan);
+    border-color: var(--primary-cyan);
     color: var(--dark-bg);
-    box-shadow: 0 0 16px rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 16px rgba(0, 191, 255, 0.4);
 }
 
 .progress-step.completed .step-dot {
-    background: var(--primary-green-dark);
-    border-color: var(--primary-green-dark);
+    background: var(--primary-cyan-dark);
+    border-color: var(--primary-cyan-dark);
     color: var(--dark-bg);
 }
 
@@ -165,7 +165,7 @@
 }
 
 .progress-step.active span {
-    color: var(--primary-green);
+    color: var(--primary-cyan);
 }
 
 /* ========================================
@@ -208,7 +208,7 @@
     display: inline-block;
     font-size: 0.75rem;
     font-weight: var(--font-weight-semibold);
-    color: var(--primary-green);
+    color: var(--primary-cyan);
     letter-spacing: 2px;
     margin-bottom: var(--spacing-xs);
 }
@@ -259,8 +259,8 @@
 .field-group select:focus,
 .field-group textarea:focus {
     outline: none;
-    border-color: var(--primary-green);
-    box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.1);
+    border-color: var(--primary-cyan);
+    box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.1);
 }
 
 .field-group input.error,
@@ -312,14 +312,14 @@
 }
 
 .option-card:hover {
-    border-color: rgba(0, 255, 136, 0.4);
-    background: rgba(0, 255, 136, 0.05);
+    border-color: rgba(0, 191, 255, 0.4);
+    background: rgba(0, 191, 255, 0.05);
 }
 
 .option-card.selected {
-    border-color: var(--primary-green);
-    background: rgba(0, 255, 136, 0.1);
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+    border-color: var(--primary-cyan);
+    background: rgba(0, 191, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.15);
 }
 
 .option-card i {
@@ -329,7 +329,7 @@
 }
 
 .option-card.selected i {
-    color: var(--primary-green);
+    color: var(--primary-cyan);
 }
 
 .option-card span {
@@ -431,9 +431,9 @@
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: var(--primary-green);
+    background: var(--primary-cyan);
     cursor: pointer;
-    box-shadow: 0 0 12px rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.4);
     transition: transform 0.2s ease;
 }
 
@@ -445,10 +445,10 @@
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: var(--primary-green);
+    background: var(--primary-cyan);
     cursor: pointer;
     border: none;
-    box-shadow: 0 0 12px rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.4);
 }
 
 .slider-labels {
@@ -463,7 +463,7 @@
 .slider-value {
     font-size: 1.5rem;
     font-weight: var(--font-weight-black);
-    color: var(--primary-green);
+    color: var(--primary-cyan);
 }
 
 /* ========================================
@@ -502,8 +502,8 @@
 }
 
 .checkbox-label input[type="checkbox"]:checked+.checkbox-custom {
-    background: var(--primary-green);
-    border-color: var(--primary-green);
+    background: var(--primary-cyan);
+    border-color: var(--primary-cyan);
 }
 
 .checkbox-label input[type="checkbox"]:checked+.checkbox-custom::after {
@@ -543,14 +543,14 @@
 }
 
 .btn-next {
-    background: var(--primary-green);
+    background: var(--primary-cyan);
     color: var(--dark-bg);
 }
 
 .btn-next:hover {
-    background: var(--primary-green-dark);
+    background: var(--primary-cyan-dark);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-green);
+    box-shadow: var(--shadow-cyan);
 }
 
 .btn-prev {
@@ -560,12 +560,12 @@
 }
 
 .btn-prev:hover {
-    border-color: var(--primary-green);
-    color: var(--primary-green);
+    border-color: var(--primary-cyan);
+    color: var(--primary-cyan);
 }
 
 .btn-submit-diag {
-    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-dark) 100%);
+    background: linear-gradient(135deg, var(--primary-cyan) 0%, var(--primary-cyan-dark) 100%);
     color: var(--dark-bg);
     font-size: 1.0625rem;
     padding: 1rem 2rem;
@@ -573,7 +573,7 @@
 
 .btn-submit-diag:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 32px rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 32px rgba(0, 191, 255, 0.4);
 }
 
 /* ========================================
@@ -597,13 +597,13 @@
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-xs);
-    background: rgba(0, 255, 136, 0.15);
-    border: 1px solid var(--primary-green);
+    background: rgba(0, 191, 255, 0.15);
+    border: 1px solid var(--primary-cyan);
     padding: 0.5rem 1.25rem;
     border-radius: 100px;
     font-size: 0.875rem;
     font-weight: var(--font-weight-semibold);
-    color: var(--primary-green);
+    color: var(--primary-cyan);
     margin-bottom: var(--spacing-sm);
     letter-spacing: 1px;
 }
@@ -660,7 +660,7 @@
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    border: 20px solid var(--primary-green);
+    border: 20px solid var(--primary-cyan);
     border-bottom-color: transparent;
     border-left-color: transparent;
     transform: rotate(225deg);
@@ -700,7 +700,7 @@
 }
 
 .scale-low {
-    color: var(--primary-green);
+    color: var(--primary-cyan);
 }
 
 .scale-medium {
@@ -730,7 +730,7 @@
     background: var(--dark-gray);
     border-radius: var(--radius-md);
     padding: 1.25rem;
-    border-left: 4px solid var(--primary-green);
+    border-left: 4px solid var(--primary-cyan);
     display: flex;
     gap: var(--spacing-sm);
     align-items: flex-start;
@@ -759,7 +759,7 @@
 }
 
 .result-item i {
-    color: var(--primary-green);
+    color: var(--primary-cyan);
 }
 
 .result-item div h4 {
@@ -784,8 +784,8 @@
 }
 
 .result-cta-card {
-    background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 255, 136, 0.02) 100%);
-    border: 2px solid var(--primary-green);
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.1) 0%, rgba(0, 191, 255, 0.02) 100%);
+    border: 2px solid var(--primary-cyan);
     border-radius: var(--radius-xl);
     padding: var(--spacing-lg);
     text-align: center;
@@ -793,7 +793,7 @@
 
 .result-cta-card i {
     font-size: 3rem;
-    color: var(--primary-green);
+    color: var(--primary-cyan);
     margin-bottom: var(--spacing-sm);
 }
 
@@ -816,7 +816,7 @@
     align-items: center;
     gap: var(--spacing-xs);
     padding: 1rem 2rem;
-    background: var(--primary-green);
+    background: var(--primary-cyan);
     color: var(--dark-bg);
     border-radius: var(--radius-md);
     font-weight: var(--font-weight-bold);
@@ -825,9 +825,9 @@
 }
 
 .btn-result-cta:hover {
-    background: var(--primary-green-dark);
+    background: var(--primary-cyan-dark);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-green);
+    box-shadow: var(--shadow-cyan);
 }
 
 /* ========================================
@@ -880,8 +880,8 @@
 }
 
 .share-btn.copy:hover {
-    background: var(--primary-green);
-    border-color: var(--primary-green);
+    background: var(--primary-cyan);
+    border-color: var(--primary-cyan);
     color: var(--dark-bg);
 }
 
@@ -900,7 +900,7 @@
 }
 
 .btn-back:hover {
-    color: var(--primary-green);
+    color: var(--primary-cyan);
 }
 
 /* Footer simplificado */

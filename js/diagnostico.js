@@ -87,7 +87,7 @@ if (confiancaSlider) {
         } else if (val <= 6) {
             confiancaValue.style.color = '#FFD700';
         } else {
-            confiancaValue.style.color = '#00FF88';
+            confiancaValue.style.color = '#00BFFF';
         }
     });
 }
@@ -362,7 +362,7 @@ function showResult(riskScore) {
 
     if (riskScore <= 25) {
         level = 'BAIXO';
-        color = '#00FF88';
+        color = '#00BFFF';
         details = getDetailsLow();
     } else if (riskScore <= 50) {
         level = 'MÉDIO';
@@ -541,8 +541,8 @@ function copyDiagLink() {
         const btn = document.querySelector('.share-btn.copy');
         const originalHTML = btn.innerHTML;
         btn.innerHTML = '<i class="fas fa-check"></i>';
-        btn.style.background = 'var(--primary-green)';
-        btn.style.borderColor = 'var(--primary-green)';
+        btn.style.background = 'var(--primary-cyan)';
+        btn.style.borderColor = 'var(--primary-cyan)';
         btn.style.color = 'var(--dark-bg)';
 
         setTimeout(() => {
@@ -560,5 +560,5 @@ function copyDiagLink() {
 
 console.log(
     '%c END Monitor — Diagnóstico de Risco ',
-    'background: #00FF88; color: #000; font-size: 16px; font-weight: bold; padding: 8px;'
+    'background: #00BFFF; color: #000; font-size: 16px; font-weight: bold; padding: 8px;'
 );

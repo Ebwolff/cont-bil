@@ -11,7 +11,7 @@ function toggleMobileMenu() {
 document.addEventListener('click', (e) => {
     const navMenu = document.querySelector('.nav-menu');
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    
+
     if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
         navMenu.classList.remove('active');
     }
@@ -48,14 +48,14 @@ const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     // Add shadow on scroll
     if (currentScroll > 100) {
         header.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.3)';
     } else {
         header.style.boxShadow = 'none';
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '.problema-card, .solucao-content, .processo-step, ' +
         '.comparison-card, .beneficio-card, .publico-card'
     );
-    
+
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -101,7 +101,7 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         // Get form data
         const formData = {
             nome: document.getElementById('nome').value,
@@ -112,26 +112,26 @@ if (contactForm) {
             mensagem: document.getElementById('mensagem').value,
             timestamp: new Date().toISOString()
         };
-        
+
         // Disable submit button
         const submitBtn = contactForm.querySelector('.btn-submit');
         const originalText = submitBtn.innerHTML;
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Enviando...</span>';
-        
+
         try {
             // Simulate form submission (replace with actual API call)
             await new Promise(resolve => setTimeout(resolve, 1500));
-            
+
             // Log to console (in production, send to server)
             console.log('Form submitted:', formData);
-            
+
             // Show success modal
             showSuccessModal();
-            
+
             // Reset form
             contactForm.reset();
-            
+
         } catch (error) {
             console.error('Error submitting form:', error);
             alert('Erro ao enviar formulário. Por favor, tente novamente.');
@@ -148,7 +148,7 @@ const telefoneInput = document.getElementById('telefone');
 if (telefoneInput) {
     telefoneInput.addEventListener('input', (e) => {
         let value = e.target.value.replace(/\D/g, '');
-        
+
         if (value.length <= 11) {
             if (value.length <= 2) {
                 e.target.value = value.replace(/(\d{0,2})/, '($1');
@@ -212,7 +212,7 @@ function animateCounter(element, target, duration = 2000) {
     const start = 0;
     const increment = target / (duration / 16);
     let current = start;
-    
+
     const timer = setInterval(() => {
         current += increment;
         if (current >= target) {
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const heroOverlay = document.querySelector('.hero-overlay');
-    
+
     if (heroOverlay) {
         heroOverlay.style.transform = `translateY(${scrolled * 0.5}px)`;
     }
@@ -268,18 +268,18 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-menu a');
-    
+
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        
+
         if (window.pageYOffset >= (sectionTop - 200)) {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
@@ -304,8 +304,8 @@ function copyToClipboard(text, button) {
     navigator.clipboard.writeText(text).then(() => {
         const originalHTML = button.innerHTML;
         button.innerHTML = '<i class="fas fa-check"></i> Copiado!';
-        button.style.color = 'var(--primary-green)';
-        
+        button.style.color = 'var(--primary-cyan)';
+
         setTimeout(() => {
             button.innerHTML = originalHTML;
             button.style.color = '';
@@ -321,21 +321,21 @@ function copyToClipboard(text, button) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const tooltipElements = document.querySelectorAll('[data-tooltip]');
-    
+
     tooltipElements.forEach(element => {
         element.addEventListener('mouseenter', (e) => {
             const tooltip = document.createElement('div');
             tooltip.className = 'tooltip';
             tooltip.textContent = e.target.getAttribute('data-tooltip');
             document.body.appendChild(tooltip);
-            
+
             const rect = e.target.getBoundingClientRect();
             tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
             tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
-            
+
             setTimeout(() => tooltip.classList.add('show'), 10);
         });
-        
+
         element.addEventListener('mouseleave', () => {
             const tooltip = document.querySelector('.tooltip');
             if (tooltip) {
@@ -366,7 +366,7 @@ function debounce(func, wait = 10) {
 // Lazy loading for images
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('img[data-src]');
-    
+
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    
+
     images.forEach(img => imageObserver.observe(img));
 });
 
@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function trackEvent(category, action, label = '') {
     // Placeholder for analytics tracking
     console.log('Event tracked:', { category, action, label });
-    
+
     // Example: Google Analytics
     // if (typeof gtag !== 'undefined') {
     //     gtag('event', action, {
@@ -435,11 +435,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 console.log(
     '%c END Monitor Contábil ',
-    'background: #00FF88; color: #000; font-size: 20px; font-weight: bold; padding: 10px;'
+    'background: #00BFFF; color: #000; font-size: 20px; font-weight: bold; padding: 10px;'
 );
 console.log(
     '%c Clareza Executiva para Enfrentar a Reforma Tributária ',
-    'color: #00FF88; font-size: 14px; font-weight: bold;'
+    'color: #00BFFF; font-size: 14px; font-weight: bold;'
 );
 console.log(
     '%c Desenvolvido com ❤️ para proteger empresas brasileiras ',
