@@ -51,7 +51,7 @@ window.addEventListener('scroll', () => {
 
     // Add shadow on scroll
     if (currentScroll > 100) {
-        header.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.3)';
+        header.style.boxShadow = 'var(--shadow-card)';
     } else {
         header.style.boxShadow = 'none';
     }
@@ -304,7 +304,7 @@ function copyToClipboard(text, button) {
     navigator.clipboard.writeText(text).then(() => {
         const originalHTML = button.innerHTML;
         button.innerHTML = '<i class="fas fa-check"></i> Copiado!';
-        button.style.color = 'var(--primary-cyan)';
+        button.style.color = 'var(--mint-action)';
 
         setTimeout(() => {
             button.innerHTML = originalHTML;
@@ -435,13 +435,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 console.log(
     '%c END Monitor Contábil ',
-    'background: #00BFFF; color: #000; font-size: 20px; font-weight: bold; padding: 10px;'
+    'background: #0C0A33; color: #fff; font-size: 20px; font-weight: bold; padding: 10px;'
 );
 console.log(
     '%c Clareza Executiva para Enfrentar a Reforma Tributária ',
-    'color: #00BFFF; font-size: 14px; font-weight: bold;'
+    'color: #0C0A33; font-size: 14px; font-weight: bold;'
 );
 console.log(
     '%c Desenvolvido com ❤️ para proteger empresas brasileiras ',
-    'color: #A0A0A0; font-size: 12px;'
+    'color: #4A5568; font-size: 12px;'
 );

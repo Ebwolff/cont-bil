@@ -34,5 +34,5 @@ document.getElementById('colabForm').addEventListener('submit', function (e) {
 // Branding no console
 console.log(
     '%c END Monitor — Programa de Co-criação ',
-    'background: #00BFFF; color: #000; font-size: 16px; font-weight: bold; padding: 8px;'
+    'background: #0C0A33; color: #fff; font-size: 16px; font-weight: bold; padding: 8px;'
 );

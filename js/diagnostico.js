@@ -83,11 +83,11 @@ if (confiancaSlider) {
         // Cor dinâmica
         const val = parseInt(confiancaSlider.value);
         if (val <= 3) {
-            confiancaValue.style.color = '#FF4444';
+            confiancaValue.style.color = '#FF4444'; // Manter vermelho para risco
         } else if (val <= 6) {
-            confiancaValue.style.color = '#FFD700';
+            confiancaValue.style.color = '#FFD700'; // Manter amarelo para alerta
         } else {
-            confiancaValue.style.color = '#00BFFF';
+            confiancaValue.style.color = 'var(--blue-support)';
         }
     });
 }
@@ -541,9 +541,9 @@ function copyDiagLink() {
         const btn = document.querySelector('.share-btn.copy');
         const originalHTML = btn.innerHTML;
         btn.innerHTML = '<i class="fas fa-check"></i>';
-        btn.style.background = 'var(--primary-cyan)';
-        btn.style.borderColor = 'var(--primary-cyan)';
-        btn.style.color = 'var(--dark-bg)';
+        btn.style.background = 'var(--mint-action)';
+        btn.style.borderColor = 'var(--mint-action)';
+        btn.style.color = 'var(--bg-white)';
 
         setTimeout(() => {
             btn.innerHTML = originalHTML;
@@ -560,5 +560,5 @@ function copyDiagLink() {
 
 console.log(
     '%c END Monitor — Diagnóstico de Risco ',
-    'background: #00BFFF; color: #000; font-size: 16px; font-weight: bold; padding: 8px;'
+    'background: #0C0A33; color: #fff; font-size: 16px; font-weight: bold; padding: 8px;'
 );
