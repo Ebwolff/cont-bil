@@ -35,50 +35,77 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-exclamation-triangle"></i>
-                <span>2026: O ANO DO TESTE DA REFORMA TRIBUTÁRIA</span>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-icon"></span>
+                    <span>Inteligência Consultiva para Contadores</span>
+                </div>
+                <h1 class="hero-title">
+                    Transforme seu Escritório em um <span class="highlight">QG de Estratégia</span>
+                </h1>
+                <p class="hero-subtitle">
+                    O END Monitor não é apenas um sistema. É a sua visão 24/7 sobre os números que realmente importam
+                    para o crescimento dos seus clientes.
+                </p>
+                <div class="hero-cta">
+                    <a href="diagnostico.html" class="btn-primary">
+                        <span>Fazer Diagnóstico Gratuito</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <button class="btn-secondary" onclick="scrollToSection('como-funciona')">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Ver Como Funciona</span>
+                    </button>
+                </div>
             </div>
-            <h1 class="hero-title">
-                Enfrente a Reforma Tributária com <span class="highlight">Clareza Executiva</span>
-            </h1>
-            <p class="hero-subtitle">
-                Enquanto o Brasil passa pela maior mudança tributária em décadas, sua empresa não pode descobrir erros
-                tarde demais.
-            </p>
             <div class="hero-stats">
                 <div class="stat-item">
-                    <div class="stat-number">2025-2027</div>
-                    <div class="stat-label">Dupla Operação</div>
+                    <span class="stat-number" data-target="247">24/7</span>
+                    <span class="stat-label">Monitoramento</span>
                 </div>
-                <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <div class="stat-number">0%</div>
-                    <div class="stat-label">Margem para Erro</div>
+                    <span class="stat-number" data-target="100">100%</span>
+                    <span class="stat-label">Conformidade</span>
                 </div>
-                <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Monitoramento</div>
+                    <span class="stat-number" data-target="10">10x</span>
+                    <span class="stat-label">Mais Visão</span>
                 </div>
-            </div>
-            <div class="hero-cta">
-                <a href="diagnostico.html" class="btn-primary">
-                    <span>Fazer Diagnóstico Gratuito</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <button class="btn-secondary" onclick="scrollToSection('como-funciona')">
-                    <i class="fas fa-play-circle"></i>
-                    <span>Ver Como Funciona</span>
-                </button>
             </div>
         </div>
         <div class="hero-scroll">
             <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Seção Visão Estratégica -->
+    <section class="vision-section">
+        <div class="container">
+            <div class="vision-grid">
+                <div class="vision-text" data-aos="fade-right">
+                    <span class="section-tag">O MANIFESTO</span>
+                    <h2>A ideia não é criar mais um sistema. <span class="highlight">É criar visão.</span></h2>
+                    <p class="vision-lead">É sair do contador operacional e ir para o contador estratégico.</p>
+                </div>
+                <div class="vision-questions" data-aos="fade-left">
+                    <div class="vision-card">
+                        <i class="fas fa-comment-dots"></i>
+                        <p>“Você sente que seus clientes realmente entendem os números que você entrega?”</p>
+                    </div>
+                    <div class="vision-card">
+                        <i class="fas fa-chart-line"></i>
+                        <p>“Se você tivesse um painel simples para mostrar pra eles em reunião, mudaria o nível da
+                            conversa?”</p>
+                    </div>
+                    <div class="vision-card">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <p>“Hoje, você trabalha mais apagando incêndio ou planejando crescimento?”</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -593,6 +620,23 @@
         </div>
     </section>
 
+    <!-- Convite para Co-criação -->
+    <section class="colab-invite-section" data-aos="fade-up">
+        <div class="container">
+            <div class="colab-card">
+                <div class="colab-card-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="colab-card-text">
+                    <h3>Você é contador e quer ajudar a moldar o futuro?</h3>
+                    <p>Participe do nosso programa de co-criação. Sua visão como especialista é fundamental para
+                        construirmos uma ferramenta que realmente mude o jogo para a nossa profissão.</p>
+                    <a href="colaboracao.html" class="btn-secondary">Colaborar com o projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Final Section -->
     <section class="cta-final" id="cta">
         <div class="container">
@@ -701,12 +745,14 @@
                     </div>
 
                     <div class="footer-column">
-                        <h4>Empresa</h4>
+                        <h3>Empresa</h3>
                         <ul>
-                            <li><a href="#sobre">Sobre nós</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                            <li><a href="#privacidade">Privacidade</a></li>
-                            <li><a href="#termos">Termos de uso</a></li>
+                            <li><a href="#solucao">Sobre o Monitor</a></li>
+                            <li><a href="colaboracao.html"
+                                    style="color: var(--primary-cyan); font-weight: bold;">Programa de Co-criação</a>
+                            </li>
+                            <li><a href="#">Privacidade</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
                         </ul>
                     </div>
 

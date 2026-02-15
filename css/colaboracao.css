@@ -1,0 +1,314 @@
+/* ========================================
+   ESTILOS CO-CRIAÇÃO
+   ======================================== */
+
+.colaboracao-page {
+    padding-top: 100px;
+    background: var(--dark-bg);
+}
+
+.colab-hero {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--dark-bg) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.colab-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: rgba(0, 191, 255, 0.1);
+    border: 1px solid var(--primary-cyan);
+    padding: 0.5rem 1.25rem;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-cyan);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 1px;
+}
+
+.colab-hero h1 {
+    font-size: 3rem;
+    font-weight: var(--font-weight-black);
+    color: var(--text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.colab-hero p {
+    font-size: 1.125rem;
+    color: var(--text-gray);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+    line-height: 1.7;
+}
+
+.colab-intro-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid var(--primary-cyan);
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius-sm);
+    max-width: 700px;
+    margin: 0 auto;
+    font-style: italic;
+    color: var(--text-white);
+    font-size: 1.25rem;
+}
+
+/* Questionário */
+.survey-section {
+    padding: var(--spacing-2xl) 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.survey-form {
+    background: var(--dark-gray);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: var(--shadow-xl);
+}
+
+.survey-step h3 {
+    font-size: 1.75rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-white);
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--primary-cyan);
+    display: inline-block;
+}
+
+.question-item {
+    margin-bottom: var(--spacing-xl);
+}
+
+.question-item label {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-white);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.4;
+}
+
+.question-item textarea {
+    width: 100%;
+    min-height: 120px;
+    background: var(--medium-gray);
+    border: 2px solid transparent;
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    color: var(--text-white);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all var(--transition-normal);
+}
+
+.question-item textarea:focus {
+    outline: none;
+    border-color: var(--primary-cyan);
+    background: var(--dark-bg);
+}
+
+/* Opções grid */
+.option-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-sm);
+}
+
+.check-option,
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--medium-gray);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.check-option:hover,
+.radio-option:hover {
+    background: rgba(0, 191, 255, 0.05);
+    transform: translateX(5px);
+}
+
+.check-option input,
+.radio-option input {
+    display: none;
+}
+
+.check-custom,
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--text-gray);
+    border-radius: 4px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.radio-custom {
+    border-radius: 50%;
+}
+
+.check-option input:checked+.check-custom,
+.radio-option input:checked+.radio-custom {
+    background: var(--primary-cyan);
+    border-color: var(--primary-cyan);
+}
+
+.check-option input:checked+.check-custom::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--dark-bg);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.radio-option input:checked+.radio-custom::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: var(--dark-bg);
+    border-radius: 50%;
+}
+
+/* Radio Group */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+/* Reflection Box */
+.reflection-box {
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.1) 0%, transparent 100%);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    margin: var(--spacing-xl) 0;
+    border: 1px solid var(--primary-cyan);
+}
+
+.reflection-box label {
+    display: block;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+    color: var(--text-white);
+}
+
+.reflection-box textarea {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Form Footer */
+.form-footer {
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-info {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-info h4 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-white);
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.input-row input {
+    padding: 0.875rem 1rem;
+    background: var(--medium-gray);
+    border: 2px solid transparent;
+    border-radius: var(--radius-sm);
+    color: var(--text-white);
+}
+
+.input-row input:focus {
+    outline: none;
+    border-color: var(--primary-cyan);
+}
+
+.btn-submit-survey {
+    width: 100%;
+    padding: 1.25rem;
+    background: var(--primary-cyan);
+    color: var(--dark-bg);
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    transition: all var(--transition-normal);
+}
+
+.btn-submit-survey:hover {
+    background: var(--primary-cyan-dark);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-cyan);
+}
+
+/* Thank You Message */
+.thank-you-card {
+    text-align: center;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+}
+
+.thank-you-card i {
+    font-size: 4rem;
+    color: var(--primary-cyan);
+    margin-bottom: var(--spacing-md);
+}
+
+.thank-you-card h2 {
+    font-size: 2.5rem;
+    color: var(--text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.thank-you-card p {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+    margin-bottom: var(--spacing-xl);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .colab-hero h1 {
+        font-size: 2rem;
+    }
+
+    .survey-form {
+        padding: var(--spacing-lg);
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+}
