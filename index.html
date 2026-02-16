@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="END Monitor Contábil - Agente inteligente para monitoramento contábil focado na Reforma Tributária 2026">
-    <title>END Monitor Contábil - Clareza Executiva na Reforma Tributária</title>
+        content="Programa de Co-criação END Monitor - Ajude-nos a moldar o futuro da contabilidade consultiva">
+    <title>Programa de Co-criação | END Monitor Contábil</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colaboracao.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
@@ -17,822 +18,231 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
-            <div class="nav-brand">
+            <a href="home.html" class="nav-brand">
                 <i class="fas fa-shield-alt"></i>
                 <span>END Monitor Contábil</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#solucao">Solução</a></li>
-                <li><a href="#como-funciona">Como Funciona</a></li>
-                <li><a href="#diferenciais">Diferenciais</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-            </ul>
-            <button class="btn-cta-header" onclick="window.location.href='diagnostico.html'">Fazer Diagnóstico
-                Grátis</button>
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
+            </a>
+            <a href="home.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i>
+                <span>Ir para o site</span>
+            </a>
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
+    <main class="colaboracao-page">
+        <!-- Hero Seção -->
+        <section class="colab-hero animate-reveal">
+            <div class="container">
+                <div class="colab-badge">
+                    <i class="fas fa-users"></i>
+                    <span>PARA COLEGAS CONTADORES</span>
+                </div>
+                <h1>Vamos construir o <span class="highlight">futuro juntos?</span></h1>
+                <p>Estou desenvolvendo uma ferramenta para ajudar empresários a entenderem melhor seus números, e sua
+                    visão como especialista do ramo é fundamental para garantirmos que estamos no caminho certo.</p>
+                <div class="colab-intro-card glass-card">
+                    <p>“Não quero criar mais um sistema de gestão. Quero criar uma ponte de visão entre o contador e o
+                        empresário.”</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Questionário -->
+        <section class="survey-section container">
+            <form id="colabForm" class="survey-form">
+
+                <div class="survey-step" data-step="1">
+                    <h3>Sua visão de mercado</h3>
+
+                    <div class="question-item">
+                        <label>1. Qual tipo de cliente você quer atrair para seu escritório nos próximos 2 anos?</label>
+                        <textarea name="q1" placeholder="Ex: PMEs de tecnologia, indústrias, comércio local..."
+                            required></textarea>
+                    </div>
+
+                    <div class="question-item">
+                        <label>2. Hoje, qual é sua maior dificuldade na gestão do próprio escritório?</label>
+                        <div class="option-grid">
+                            <label class="check-option">
+                                <input type="checkbox" name="q2" value="contratacao">
+                                <span class="check-custom"></span>
+                                <span>Contratação/Retenção</span>
+                            </label>
+                            <label class="check-option">
+                                <input type="checkbox" name="q2" value="processos">
+                                <span class="check-custom"></span>
+                                <span>Processos internos</span>
+                            </label>
+                            <label class="check-option">
+                                <input type="checkbox" name="q2" value="precificacao">
+                                <span class="check-custom"></span>
+                                <span>Precificação/Margem</span>
+                            </label>
+                            <label class="check-option">
+                                <input type="checkbox" name="q2" value="tempo">
+                                <span class="check-custom"></span>
+                                <span>Falta de tempo estratégico</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-item">
+                        <label>3. Seus clientes realmente entendem os relatórios que recebem hoje?</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="q3" value="sim" required>
+                                <span class="radio-custom"></span>
+                                <span>Sim, a maioria</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="q3" value="parcial">
+                                <span class="radio-custom"></span>
+                                <span>Apenas os maiores</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="q3" value="nao">
+                                <span class="radio-custom"></span>
+                                <span>A grande maioria não entende</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-item">
+                        <label>4. Você sente que poderia entregar mais valor estratégico além das obrigações
+                            fiscais?</label>
+                        <textarea name="q4" placeholder="O que te impede hoje?" required></textarea>
+                    </div>
+
+                    <div class="question-item">
+                        <label>5. Em reuniões com clientes, você fala mais sobre impostos/guias ou sobre crescimento do
+                            negócio?</label>
+                        <select name="q5" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="impostos">90% Impostos / 10% Crescimento</option>
+                            <option value="misto">50% / 50%</option>
+                            <option value="estrategico">90% Crescimento / 10% Impostos</option>
+                        </select>
+                    </div>
+
+                    <div class="question-item">
+                        <label>6. Se tivesse uma ferramenta visual simples para apresentar números, isso elevaria sua
+                            autoridade perante o cliente?</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="q6" value="muito" required>
+                                <span class="radio-custom"></span>
+                                <span>Com certeza, mudaria o jogo</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="q6" value="pouco">
+                                <span class="radio-custom"></span>
+                                <span>Ajudaria um pouco</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="q6" value="nao">
+                                <span class="radio-custom"></span>
+                                <span>Não vejo como diferencial</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-item">
+                        <label>7. Atualmente, como você prefere ser visto pelo mercado?</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="q7" value="tradicional" required>
+                                <span class="radio-custom"></span>
+                                <span>Contador Tradicional (Segurança e Conformidade)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="q7" value="consultor">
+                                <span class="radio-custom"></span>
+                                <span>Consultor Estratégico (Crescimento e Lucratividade)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-item">
+                        <label>8. Se seus clientes começassem a tomar decisões com base em indicadores claros, isso
+                            aumentaria sua retenção?</label>
+                        <select name="q8" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="sim">Sim, eles valorizariam muito mais o serviço</option>
+                            <option value="talvez">Talvez, depende do perfil do cliente</option>
+                            <option value="nao">Não acredito que influencie na retenção</option>
+                        </select>
+                    </div>
+
+                    <div class="question-item">
+                        <label>9. Se pudesse ter um diferencial competitivo visual e estratégico agora no início do
+                            escritório, você usaria isso ativamente nas vendas/leads?</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="q9" value="sim" required>
+                                <span class="radio-custom"></span>
+                                <span>Sim, usaria como principal argumento</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="q9" value="talvez">
+                                <span class="radio-custom"></span>
+                                <span>Talvez, se fosse fácil de usar</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-item">
+                        <label>10. Na sua opinião, o que NÃO pode faltar em um painel para um empresário leigo entender
+                            os números da própria empresa?</label>
+                        <textarea name="q10"
+                            placeholder="Ex: Lucratividade real, Fluxo de caixa visual, Alertas de risco..."
+                            required></textarea>
+                    </div>
+
+                    <div class="reflection-box">
+                        <label><strong>💡 Reflexão:</strong> Se essa aplicação realmente ajudasse o empresário a
+                            entender melhor os números antes mesmo de falar com você... você veria isso como uma ameaça
+                            ou como uma oportunidade estratégica de começar a conversa em um nível muito
+                            superior?</label>
+                        <textarea name="q11" placeholder="Seja sincero..." required></textarea>
+                    </div>
+
+                    <div class="form-footer">
+                        <div class="contact-info">
+                            <h4>Seus dados (opcional):</h4>
+                            <div class="input-row">
+                                <input type="text" name="nome" placeholder="Seu nome">
+                                <input type="email" name="email" placeholder="Seu melhor e-mail">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit-survey">
+                            <span>Enviar minha contribuição</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="thankYouMessage" class="thank-you-card hidden">
+                <i class="fas fa-heart"></i>
+                <h2>Muito obrigado pela sua visão!</h2>
+                <p>Suas contribuições serão fundamentais para construirmos algo que realmente faça a diferença no dia a
+                    dia do contador estratégico.</p>
+                <div class="thank-you-actions">
+                    <a href="index.html" class="btn-secondary">Voltar ao início</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer diag-footer">
         <div class="container">
-            <div class="hero-content animate-reveal">
-                <div class="hero-badge">
-                    <span class="pulse-icon"></span>
-                    <span>Inteligência Estratégica & Tecnologia</span>
-                </div>
-                <h1 class="hero-title">
-                    O Futuro da Contabilidade é <span class="highlight">Visual e Estratégico</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Transforme dados complexos em painéis executivos de alta precisão. O END Monitor entrega clareza
-                    absoluta sobre o impacto da Reforma Tributária.
-                </p>
-                <div class="hero-cta">
-                    <a href="diagnostico.html" class="btn-primary">
-                        <span>Iniciar Diagnóstico Premium</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <button class="btn-secondary" onclick="scrollToSection('como-funciona')">
-                        <i class="fas fa-play-circle"></i>
-                        <span>Ver Tecnologia em Ação</span>
-                    </button>
-                </div>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="247">24/7</span>
-                    <span class="stat-label">Monitoramento</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="100">100%</span>
-                    <span class="stat-label">Conformidade</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="10">10x</span>
-                    <span class="stat-label">Mais Visão</span>
-                </div>
-            </div>
-
-            <!-- Neural Interface Visual -->
-            <div class="hero-visual-container animate-float"
-                style="margin-top: 40px; width: 100%; max-width: 800px; margin-left: auto; margin-right: auto;">
-                <div class="css-neural-interface">
-                    <div class="neural-grid"></div>
-                    <div class="neural-circle"></div>
-                    <div class="neural-content">
-                        <i class="fas fa-microchip fa-3x"
-                            style="color: var(--vibrant-cyan); margin-bottom: 15px; text-shadow: 0 0 10px var(--vibrant-cyan);"></i>
-                        <h3 style="color: white; font-size: 1.5rem; margin-bottom: 5px;">Agent 01 ATIVO</h3>
-                        <p style="color: var(--mint-action); font-weight: bold; letter-spacing: 2px;">MONITORANDO</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Seção Visão Estratégica -->
-    <section class="vision-section">
-        <div class="container">
-            <div class="vision-grid">
-                <div class="vision-text" data-aos="fade-right">
-                    <span class="section-tag">O MANIFESTO</span>
-                    <h2>A ideia não é criar mais um sistema. <span class="highlight">É criar visão.</span></h2>
-                    <p class="vision-lead">É sair do contador operacional e ir para o contador estratégico.</p>
-                </div>
-                <div class="vision-questions" data-aos="fade-left">
-                    <div class="vision-card glass-card">
-                        <i class="fas fa-comment-dots"></i>
-                        <p>“Você sente que seus clientes realmente entendem os números que você entrega?”</p>
-                    </div>
-                    <div class="vision-card glass-card">
-                        <i class="fas fa-chart-line"></i>
-                        <p>“Se você tivesse um painel simples para mostrar pra eles em reunião, mudaria o nível da
-                            conversa?”</p>
-                    </div>
-                    <div class="vision-card glass-card">
-                        <i class="fas fa-fire-extinguisher"></i>
-                        <p>“Hoje, você trabalha mais apagando incêndio ou planejando crescimento?”</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Problema Section -->
-    <section class="problema" id="problema">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag danger">O PROBLEMA</span>
-                <h2 class="section-title">A Tempestade Perfeita de 2026</h2>
-                <p class="section-subtitle">
-                    Entre 2025 e 2027, empresas brasileiras enfrentam a <strong>complexidade máxima</strong>: operação
-                    simultânea do sistema antigo e do novo modelo IBS/CBS
-                </p>
-            </div>
-
-            <div class="problema-grid">
-                <div class="problema-card card-danger">
-                    <div class="problema-icon">
-                        <i class="fas fa-exclamation-circle"></i>
-                    </div>
-                    <h3>Incerteza na Emissão</h3>
-                    <p>CBS ou IBS? A dúvida na hora de emitir documentos fiscais pode custar caro. Um erro de
-                        classificação gera multas e retrabalho imenso.</p>
-                </div>
-
-                <div class="problema-card card-danger">
-                    <div class="problema-icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <h3>Perda Silenciosa de Créditos</h3>
-                    <p>Créditos tributários não identificados no momento certo são dinheiro que simplesmente desaparece
-                        - sem alerta, sem volta.</p>
-                </div>
-
-                <div class="problema-card card-danger">
-                    <div class="problema-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Descoberta Tardia de Erros</h3>
-                    <p>Quando o erro aparece nas análises tradicionais, o dinheiro já saiu. A correção é cara, demorada
-                        e, muitas vezes, impossível.</p>
-                </div>
-
-                <div class="problema-card card-danger">
-                    <div class="problema-icon">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <h3>Dupla Complexidade</h3>
-                    <p>Gerenciar dois sistemas tributários ao mesmo tempo multiplica a carga de trabalho e os riscos
-                        operacionais da sua contabilidade.</p>
-                </div>
-            </div>
-
-            <div class="problema-quote">
-                <i class="fas fa-quote-left"></i>
-                <blockquote>
-                    "Não é questão de <strong>SE</strong> você vai enfrentar problemas com a Reforma Tributária. É
-                    questão de <strong>QUANDO</strong> você vai descobri-los - e se ainda terá tempo de corrigir."
-                </blockquote>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solução Section -->
-    <section class="solucao" id="solucao">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag success">A SOLUÇÃO</span>
-                <h2 class="section-title">END Monitor Contábil</h2>
-                <p class="section-subtitle">
-                    Um <strong>agente inteligente</strong> que trabalha 24/7 para eliminar a incerteza e proteger sua
-                    empresa
-                </p>
-            </div>
-
-            <div class="solucao-main">
-                <div class="solucao-visual animate-float">
-                    <!-- Placeholder de Imagem Premium (Dashboard + Pessoa) -->
-                    <div class="css-dashboard-mockup glass-card">
-                        <div class="mockup-header">
-                            <div style="display: flex; gap: 6px;">
-                                <div style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F56;"></div>
-                                <div style="width: 12px; height: 12px; border-radius: 50%; background: #FFBD2E;"></div>
-                                <div style="width: 12px; height: 12px; border-radius: 50%; background: #27C93F;"></div>
-                            </div>
-                            <div style="color: rgba(255,255,255,0.7); font-size: 0.85rem; font-family: monospace;">
-                                END_MONITOR__EXEC_DASHBOARD.exe</div>
-                            <div style="width: 12px;"></div>
-                        </div>
-
-                        <div
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                            <div style="font-size: 1.2rem; color: white; font-weight: bold;">Visão Geral Tributária
-                            </div>
-                            <div
-                                style="background: rgba(0, 189, 139, 0.2); color: var(--mint-action); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">
-                                ● Online</div>
-                        </div>
-
-                        <div class="mockup-bar" style="margin-bottom: 5px;"></div>
-                        <div class="mockup-bar" style="width: 80%; margin-bottom: 15px;"></div>
-
-                        <div style="display: flex; gap: 15px; height: 140px;">
-                            <div
-                                style="flex: 1; background: linear-gradient(180deg, rgba(25, 130, 196, 0.2) 0%, rgba(25, 130, 196, 0) 100%); border: 1px solid rgba(25, 130, 196, 0.3); border-radius: 12px; position: relative; overflow: hidden;">
-                                <div
-                                    style="position: absolute; bottom: 0; left: 0; right: 0; height: 60%; background: linear-gradient(to top, var(--blue-support), transparent); opacity: 0.3;">
-                                </div>
-                                <div style="padding: 15px; color: var(--blue-support); font-size: 0.9rem;">Documentos
-                                </div>
-                                <div style="padding-left: 15px; color: white; font-size: 1.5rem; font-weight: bold;">
-                                    1,284</div>
-                            </div>
-                            <div
-                                style="flex: 1; background: linear-gradient(180deg, rgba(0, 189, 139, 0.2) 0%, rgba(0, 189, 139, 0) 100%); border: 1px solid rgba(0, 189, 139, 0.3); border-radius: 12px; position: relative; overflow: hidden;">
-                                <div
-                                    style="position: absolute; bottom: 0; left: 0; right: 0; height: 80%; background: linear-gradient(to top, var(--mint-action), transparent); opacity: 0.3;">
-                                </div>
-                                <div style="padding: 15px; color: var(--mint-action); font-size: 0.9rem;">Conformidade
-                                </div>
-                                <div style="padding-left: 15px; color: white; font-size: 1.5rem; font-weight: bold;">
-                                    100%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="solucao-content">
-                    <h3>Não é apenas mais uma ferramenta</h3>
-                    <p class="lead">
-                        O END Monitor Contábil é um <strong>agente inteligente autônomo</strong> que age como um
-                        contador vigilante trabalhando 24 horas por dia.
-                    </p>
-
-                    <div class="solucao-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-eye"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Monitoramento Contínuo</h4>
-                                <p>Analisa automaticamente cada NF-e e NFS-e emitida, sem intervenção manual</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Ação em Tempo Real</h4>
-                                <p>Identifica divergências no momento da emissão e alerta instantaneamente</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check-double"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Validação Inteligente</h4>
-                                <p>Aplica regras complexas da Reforma Tributária de forma automática e precisa</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-bell"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Alertas Proativos</h4>
-                                <p>Avisa você ANTES que erros se transformem em multas ou prejuízos</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="solucao-highlight">
-                        <i class="fas fa-lightbulb"></i>
-                        <p><strong>O diferencial:</strong> Você não descobre problemas tarde demais. O agente trabalha
-                            preventivamente para garantir conformidade em tempo real.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Como Funciona Section -->
-    <section class="como-funciona" id="como-funciona">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">PROCESSO</span>
-                <h2 class="section-title">Como o END Monitor Trabalha Para Você</h2>
-                <p class="section-subtitle">
-                    5 etapas automatizadas que protegem sua empresa 24/7
-                </p>
-            </div>
-
-            <div class="processo-timeline">
-                <div class="processo-step" data-step="1">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-download"></i>
-                        </div>
-                        <h3>Ingestão Automática</h3>
-                        <p>O agente captura automaticamente todos os arquivos XML de NF-e e NFS-e emitidos pela sua
-                            empresa. Sem configuração complexa.</p>
-                    </div>
-                    <div class="step-connector"></div>
-                </div>
-
-                <div class="processo-step" data-step="2">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <h3>Validação de Regras</h3>
-                        <p>Aplica instantaneamente as regras da Reforma Tributária (IBS/CBS) sobre cada documento fiscal
-                            capturado.</p>
-                    </div>
-                    <div class="step-connector"></div>
-                </div>
-
-                <div class="processo-step" data-step="3">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h3>Identificação de Divergência</h3>
-                        <p>Detecta erros de classificação, créditos não aproveitados, inconsistências e qualquer desvio
-                            das normas vigentes.</p>
-                    </div>
-                    <div class="step-connector"></div>
-                </div>
-
-                <div class="processo-step" data-step="4">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-bell"></i>
-                        </div>
-                        <h3>Alerta em Tempo Real</h3>
-                        <p>Notifica você imediatamente sobre qualquer problema encontrado, com contexto claro e
-                            orientação sobre o que fazer.</p>
-                    </div>
-                    <div class="step-connector"></div>
-                </div>
-
-                <div class="processo-step" data-step="5">
-                    <div class="step-number">05</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-sync"></i>
-                        </div>
-                        <h3>Monitoramento Contínuo</h3>
-                        <p>O ciclo se repete 24/7, garantindo que nenhum documento fiscal escape da vigilância do agente
-                            inteligente.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="processo-result">
-                <div class="result-card">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Resultado Final</h3>
-                    <p>Conformidade garantida, créditos protegidos e zero surpresas desagradáveis. Você dorme tranquilo
-                        sabendo que um agente especializado está de olho em tudo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Diferenciais Section -->
-    <section class="diferenciais" id="diferenciais">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">DIFERENCIAIS</span>
-                <h2 class="section-title">Por Que END Monitor é Diferente?</h2>
-                <p class="section-subtitle">
-                    Não é ERP. Não é BI. Não é chatbot. É um <strong>agente inteligente focado</strong>.
-                </p>
-            </div>
-
-            <div class="diferenciais-comparison">
-                <div class="comparison-column">
-                    <h3 class="comparison-title negative">
-                        <i class="fas fa-times-circle"></i>
-                        O Que NÃO É
-                    </h3>
-
-                    <div class="comparison-card negative">
-                        <div class="comparison-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h4>Não é ERP</h4>
-                        <p>ERPs são sistemas complexos e generalistas. Eles fazem mil coisas, mas não são especialistas
-                            em nada.</p>
-                        <ul>
-                            <li>Implementação demorada</li>
-                            <li>Curva de aprendizado íngreme</li>
-                            <li>Manutenção cara e complexa</li>
-                        </ul>
-                    </div>
-
-                    <div class="comparison-card negative">
-                        <div class="comparison-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h4>Não é BI Passivo</h4>
-                        <p>Business Intelligence mostra o que aconteceu. Análises retroativas são úteis, mas não evitam
-                            problemas.</p>
-                        <ul>
-                            <li>Olha para o passado</li>
-                            <li>Requer análise manual</li>
-                            <li>Descobre erros tarde demais</li>
-                        </ul>
-                    </div>
-
-                    <div class="comparison-card negative">
-                        <div class="comparison-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h4>Não é Chatbot</h4>
-                        <p>Chatbots respondem perguntas genéricas. Eles são reativos e dependem que você saiba o que
-                            perguntar.</p>
-                        <ul>
-                            <li>Respostas genéricas</li>
-                            <li>Depende de perguntas certas</li>
-                            <li>Não age autonomamente</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="comparison-divider">
-                    <div class="divider-line"></div>
-                    <div class="divider-icon">
-                        <i class="fas fa-exchange-alt"></i>
-                    </div>
-                </div>
-
-                <div class="comparison-column">
-                    <h3 class="comparison-title positive">
-                        <i class="fas fa-check-circle"></i>
-                        O Que É
-                    </h3>
-
-                    <div class="comparison-card positive">
-                        <div class="comparison-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h4>Agente Inteligente Especializado</h4>
-                        <p>Um especialista focado exclusivamente em monitorar sua conformidade tributária na Reforma.
-                        </p>
-                        <ul>
-                            <li>✓ Foco total na Reforma Tributária</li>
-                            <li>✓ Implementação rápida e simples</li>
-                            <li>✓ Especialista, não generalista</li>
-                        </ul>
-                    </div>
-
-                    <div class="comparison-card positive">
-                        <div class="comparison-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h4>Ação Proativa em Tempo Real</h4>
-                        <p>Age no momento que importa: quando o documento fiscal está sendo emitido, antes do erro
-                            acontecer.</p>
-                        <ul>
-                            <li>✓ Monitoramento contínuo 24/7</li>
-                            <li>✓ Alertas instantâneos</li>
-                            <li>✓ Previne antes de acontecer</li>
-                        </ul>
-                    </div>
-
-                    <div class="comparison-card positive">
-                        <div class="comparison-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h4>Autonomia e Inteligência</h4>
-                        <p>Não espera comandos. Trabalha de forma autônoma, analisando cada operação e identificando
-                            riscos.</p>
-                        <ul>
-                            <li>✓ Trabalho autônomo</li>
-                            <li>✓ Análise inteligente contextual</li>
-                            <li>✓ Orientações claras e acionáveis</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="diferenciais-summary">
-                <div class="summary-card">
-                    <i class="fas fa-star"></i>
-                    <h3>A Diferença Crucial</h3>
-                    <p>Enquanto outras soluções são <strong>ferramentas passivas</strong> que esperam sua ação, o END
-                        Monitor é um <strong>agente ativo</strong> que trabalha para você, identifica problemas sozinho
-                        e te alerta antes que se tornem prejuízo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefícios Section -->
-    <section class="beneficios" id="beneficios">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag success">BENEFÍCIOS</span>
-                <h2 class="section-title">O Que Você Ganha</h2>
-                <p class="section-subtitle">
-                    Resultados concretos que impactam diretamente o resultado da sua empresa
-                </p>
-            </div>
-
-            <div class="beneficios-grid">
-                <div class="beneficio-card">
-                    <div class="beneficio-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Conformidade Garantida</h3>
-                    <p>Durma tranquilo sabendo que cada documento fiscal está sendo validado contra as regras da Reforma
-                        Tributária em tempo real.</p>
-                </div>
-
-                <div class="beneficio-card">
-                    <div class="beneficio-icon">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                    <h3>Proteção Financeira</h3>
-                    <p>Evite multas, recupere créditos tributários e elimine prejuízos causados por erros de
-                        classificação fiscal.</p>
-                </div>
-
-                <div class="beneficio-card">
-                    <div class="beneficio-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Economia de Tempo</h3>
-                    <p>Sua equipe contábil pode focar no estratégico enquanto o agente cuida da vigilância operacional
-                        24/7.</p>
-                </div>
-
-                <div class="beneficio-card">
-                    <div class="beneficio-icon">
-                        <i class="fas fa-exclamation-triangle"></i>
-                    </div>
-                    <h3>Redução de Riscos</h3>
-                    <p>Identifique e corrija problemas antes que se transformem em autuações, processos ou prejuízos
-                        irreversíveis.</p>
-                </div>
-
-                <div class="beneficio-card">
-                    <div class="beneficio-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Visibilidade Total</h3>
-                    <p>Tenha clareza completa sobre a situação tributária da sua empresa a qualquer momento, sem
-                        surpresas.</p>
-                </div>
-
-                <div class="beneficio-card">
-                    <div class="beneficio-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Inteligência Acionável</h3>
-                    <p>Receba alertas claros, contextualizados e com orientações práticas sobre o que fazer em cada
-                        situação.</p>
-                </div>
-            </div>
-
-            <div class="beneficios-testimonial">
-                <div class="testimonial-content">
-                    <div class="testimonial-quote">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"Com o END Monitor, transformamos a ansiedade da Reforma Tributária em confiança operacional.
-                            Sabemos exatamente onde estamos a cada momento."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Contador Estratégico</h4>
-                            <p>Escritório Contábil de Médio Porte</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Público-Alvo Section -->
-    <section class="publico-alvo">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">PARA QUEM</span>
-                <h2 class="section-title">Quem Precisa do END Monitor</h2>
-            </div>
-
-            <div class="publico-grid">
-                <div class="publico-card">
-                    <div class="publico-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <h3>Contadores e Contadoras</h3>
-                    <p>Profissionais que precisam garantir conformidade para múltiplos clientes e não podem errar na
-                        transição tributária.</p>
-                </div>
-
-                <div class="publico-card">
-                    <div class="publico-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Escritórios Contábeis</h3>
-                    <p>Empresas que atendem dezenas ou centenas de clientes e precisam escalar a vigilância tributária
-                        sem aumentar custos.</p>
-                </div>
-
-                <div class="publico-card">
-                    <div class="publico-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Empresários</h3>
-                    <p>Gestores que querem ter certeza de que sua empresa está protegida e não serão pegos de surpresa
-                        por problemas fiscais.</p>
-                </div>
-
-                <div class="publico-card">
-                    <div class="publico-icon">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <h3>Empresas de Médio e Grande Porte</h3>
-                    <p>Organizações com alto volume de documentos fiscais que precisam de monitoramento automatizado e
-                        confiável.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Convite para Co-criação -->
-    <section class="colab-invite-section" data-aos="fade-up">
-        <div class="container">
-            <div class="colab-card">
-                <div class="colab-card-icon">
-                    <i class="fas fa-handshake"></i>
-                </div>
-                <div class="colab-card-text">
-                    <h3>Você é contador e quer ajudar a moldar o futuro?</h3>
-                    <p>Participe do nosso programa de co-criação. Sua visão como especialista é fundamental para
-                        construirmos uma ferramenta que realmente mude o jogo para a nossa profissão.</p>
-                    <a href="colaboracao.html" class="btn-secondary">Colaborar com o projeto</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Final Section -->
-    <section class="cta-final" id="cta">
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-header">
-                    <span class="cta-badge">
-                        <i class="fas fa-clock"></i>
-                        O Relógio Está Correndo - 2026 Está Chegando
-                    </span>
-                    <h2>Não Deixe Sua Empresa Vulnerável</h2>
-                    <p>A Reforma Tributária não vai esperar você estar pronto. Cada dia sem proteção é um dia de risco.
-                    </p>
-                </div>
-
-                <div class="cta-form-container">
-                    <form class="cta-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="nome">Nome Completo *</label>
-                            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">E-mail Profissional *</label>
-                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="telefone">Telefone *</label>
-                            <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="empresa">Empresa</label>
-                            <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="perfil">Você é:</label>
-                            <select id="perfil" name="perfil">
-                                <option value="">Selecione</option>
-                                <option value="contador">Contador(a)</option>
-                                <option value="escritorio">Escritório Contábil</option>
-                                <option value="empresario">Empresário(a)</option>
-                                <option value="gestor">Gestor Fiscal/Financeiro</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="mensagem">Conte-nos sobre sua preocupação com a Reforma Tributária</label>
-                            <textarea id="mensagem" name="mensagem" rows="4"
-                                placeholder="Opcional: compartilhe suas principais dúvidas ou desafios"></textarea>
-                        </div>
-
-                        <a href="diagnostico.html" class="btn-submit" style="text-decoration:none; text-align:center;">
-                            <i class="fas fa-stethoscope"></i>
-                            <span>Fazer Diagnóstico de Risco Grátis</span>
-                        </a>
-
-                        <p class="form-privacy">
-                            <i class="fas fa-lock"></i>
-                            Seus dados estão seguros. Não compartilhamos informações com terceiros.
-                        </p>
-                    </form>
-
-                    <div class="cta-guarantees">
-                        <div class="guarantee-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Demonstração gratuita</span>
-                        </div>
-                        <div class="guarantee-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Sem compromisso</span>
-                        </div>
-                        <div class="guarantee-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Resposta em 24h</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>END Monitor Contábil</span>
-                    </div>
-                    <p>Clareza executiva para enfrentar a Reforma Tributária com confiança.</p>
-                </div>
-
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Solução</h4>
-                        <ul>
-                            <li><a href="#solucao">O que é</a></li>
-                            <li><a href="#como-funciona">Como funciona</a></li>
-                            <li><a href="#diferenciais">Diferenciais</a></li>
-                            <li><a href="#beneficios">Benefícios</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h3>Empresa</h3>
-                        <ul>
-                            <li><a href="#solucao">Sobre o Monitor</a></li>
-                            <li><a href="colaboracao.html"
-                                    style="color: var(--primary-cyan); font-weight: bold;">Programa de Co-criação</a>
-                            </li>
-                            <li><a href="#">Privacidade</a></li>
-                            <li><a href="#">Termos de Uso</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>Contato</h4>
-                        <ul>
-                            <li><i class="fas fa-envelope"></i> contato@endmonitor.com.br</li>
-                            <li><i class="fas fa-phone"></i> (11) 0000-0000</li>
-                            <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
             <div class="footer-bottom">
                 <p>&copy; 2026 END Monitor Contábil. Todos os direitos reservados.</p>
-                <div class="footer-social">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Success Modal -->
-    <div class="modal" id="successModal">
-        <div class="modal-content">
-            <div class="modal-icon">
-                <i class="fas fa-check-circle"></i>
-            </div>
-            <h3>Mensagem Enviada com Sucesso!</h3>
-            <p>Obrigado pelo seu interesse. Nossa equipe entrará em contato em até 24 horas.</p>
-            <button class="btn-modal-close" onclick="closeModal()">Fechar</button>
-        </div>
-    </div>
-
-    <script src="js/script.js"></script>
+    <script src="js/colaboracao.js"></script>
 </body>
 
 </html>

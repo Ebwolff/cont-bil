@@ -29,6 +29,11 @@ document.getElementById('colabForm').addEventListener('submit', function (e) {
 
     // Scroll para o topo da mensagem
     thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    // Redirecionar para a Home após 3 segundos
+    setTimeout(() => {
+        window.location.href = 'home.html';
+    }, 3000);
 });
 
 // Branding no console
